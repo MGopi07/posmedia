@@ -7963,7 +7963,8 @@ blockquote .blockquote_admin i {
   }
 
   .home_three_slider .item_title {
-    font-size: 66px;
+    /* font-size: 66px; */
+    font-size: 38px;
     margin-bottom: 20px;
   }
 
@@ -8684,9 +8685,9 @@ blockquote .blockquote_admin i {
   font-size: 48px;
   font-weight: bold;
   position: absolute;
-  left: 15%; 
+  left: 15%;
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   text-align: left;
   color: white;
 }
@@ -8700,11 +8701,26 @@ blockquote .blockquote_admin i {
 
 @keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(10px);
+    opacity: 0;
+    transform: translateY(10px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@media (max-width: 768px) {
+  .owl-theme .owl-dots .owl-dot:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .banner-top {
+    padding-top: 30px;
+  }
+  .slider_image img {
+    border-radius: 0px 20px 0px 20px;
+}
 }
