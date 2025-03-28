@@ -8722,7 +8722,7 @@ blockquote .blockquote_admin i {
     padding-top: 30px;
   }
   .slider_image img {
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 0px 10px 0px 10px;
   }
 }
 
@@ -8844,18 +8844,36 @@ blockquote .blockquote_admin i {
 .slider_top {
   margin-top: 150px;
 }
+.tab_none{
+  display: none !important;
+}
 @media (min-width: 1020px) {
   
   .slider_top {
     margin-top: 120px;
+  }
+  .tab_none{
+    display: none;
   }
 }
 @media (max-width: 768px){
   .slider_top {
     margin-top: 80px;
   }
+  .tab_none{
+    display: none;
+  }
+  .mobile_none{
+    display: block;
+  }
 }
 @media (max-width: 566px) {
+  .mobile_none{
+    display: none;
+  }
+  .tab_none{
+    display: block !important;
+  }
   .slider_top {
     margin-top: 80px;
     /* height: 50vh; */
