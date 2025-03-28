@@ -8858,22 +8858,22 @@ blockquote .blockquote_admin i {
 @media (max-width: 566px) {
   .slider_top {
     margin-top: 80px;
-    height: 50vh;
+    /* height: 50vh; */
   }
   .slide {
-    background-size: contain;
-    background-repeat: no-repeat;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
     position: absolute;
     top: 0;
     left: 100%;
-    height: 63%;
+    /* height: 63%; */
     width: 100%;
   }
-  .buttons-container {
+  /* .buttons-container {
     position: absolute;
     right: 0px;
     top: 52%;
-  }
+  } */
   .slide .info {
     /* width: 300px; */
     padding: 8px 10px;
