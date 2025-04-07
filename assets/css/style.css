@@ -5624,8 +5624,9 @@ blockquote .blockquote_admin i {
   background: #ffffff;
 }
 .home_three_slider .slider_image {
-  float: left;
-  width: 737px;
+  /* float: left; */
+  /* width: 737px; */
+  padding: 30px 0px;
 }
 .home_three_slider .slider_content {
   padding-right: 60px;
@@ -5802,7 +5803,7 @@ blockquote .blockquote_admin i {
   }
 
   .home_three_slider .slider_image {
-    width: 620px;
+    /* width: 620px; */
   }
 
   /* home - end */
@@ -6437,7 +6438,7 @@ blockquote .blockquote_admin i {
   }
 
   .home_three_slider .slider_image {
-    width: 580px;
+    /* width: 580px; */
   }
 
   /* home - end */
@@ -7224,7 +7225,7 @@ blockquote .blockquote_admin i {
   .home_three_slider .slider_image {
     width: 100%;
     float: none;
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: 0px auto 30px;
   }
 
@@ -7973,7 +7974,7 @@ blockquote .blockquote_admin i {
   }
 
   .home_three_slider .slider_image {
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0px auto 40px;
   }
 
@@ -8534,7 +8535,8 @@ blockquote .blockquote_admin i {
   height: 70px;
 }
 .banner-top {
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  padding-top: 120px;
 }
 .brand_logo {
   margin-top: -10px;
@@ -8566,7 +8568,7 @@ blockquote .blockquote_admin i {
   background-color: #25d366 !important;
 }
 .slider_image img {
-  border-radius: 0px 50px 0px 50px;
+  /* border-radius: 0px 50px 0px 50px; */
 }
 /*------------------*/
 /* Slider Container */
@@ -8677,7 +8679,6 @@ blockquote .blockquote_admin i {
   .custom-slider {
     margin-top: 100px !important;
   }
-  
 }
 
 /*------------------*/
@@ -8727,192 +8728,120 @@ blockquote .blockquote_admin i {
 }
 
 /*-------slider---------*/
-.title {
-  background: rgba(255, 255, 255, 0.7);
-  color: #333;
-  position: fixed;
-  text-align: right;
-  top: 0;
-  right: 0;
-  padding: 10px 15px;
-  margin: 0;
-  z-index: 100;
+.carousel-inner.slider_top {
+  height: 700px; /* Adjust this height as needed */
 }
 
-.slider-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+.carousel-item {
+  height: 100%; /* Makes sure each slide takes full height */
 }
 
-.slider {
-  position: relative;
+.carousel-item img {
   height: 100%;
   width: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
-.slide {
-  background-position: center center;
-  background-size: cover;
+.carousel-caption {
+  padding: 10px;
+  border-radius: 5px;
   position: absolute;
-  top: 0;
-  left: 100%;
-  height: 100%;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
+  right: 45%;
+  top: 12rem;
+  left: 3%;
+  width: 500px;
+  height: 100px;
 }
-
-.slide.active {
-  left: 0;
-  transform: translateX(0);
-}
-
-/* .slide.active {
-  transform: translateX(-100%);
-} */
-
-.slide .info {
-  /* background: rgba(255, 255, 255, 0.2); Transparent white */
-  background: rgb(43 37 37 / 20%);
-  backdrop-filter: blur(10px); /* Blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+.carousel-caption h3 {
   color: white;
-  padding: 20px 15px;
-  position: absolute;
-  top: 80px;
-  left: 40px;
-  text-align: center;
-  width: 300px;
-  max-width: 100%;
-  opacity: 0.9; /* Adjust transparency */
+  display: flex;
+}
+.carousel-inner.slider_top {
+  margin-top: 145px;
 }
 
-.slide .info .slider_title {
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-}
-.slide .info p {
-  font-size: 20px;
-  color: black;
-}
-.slide.active .info {
-  opacity: 1;
-  transform: translateY(-40px);
-  transition: all 0.5s ease-in-out 0.8s;
-}
-
-.eraser {
-  background: #f5f5f5;
-  position: absolute;
-  transition: transform 0.5s ease-in-out;
-  opacity: 0.95;
-  top: 0;
-  left: 100%;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
+@media (max-width: 1024px) {
+  .carousel-inner.slider_top {
+    margin-top: 120px; /* Medium screens (Tablets) */
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 45%;
+    top: 12rem;
+    left: 2%;
+    width: 500px;
+    height: 100px;
+  }
 }
 
-.eraser.active {
-  transform: translateX(-100%);
+@media (max-width: 768px) {
+  .carousel-inner.slider_top {
+    margin-top: 80px; /* Small screens (Landscape phones) */
+  }
 }
 
-.buttons-container {
-  position: absolute;
-  bottom: 50px;
-  right: 60px;
+@media (max-width: 576px) {
+  .carousel-inner.slider_top {
+    margin-top: 80px; /* Extra small screens (Portrait phones) */
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 12rem;
+    left: 2%;
+    width: 500px;
+    height: 100px;
+  }
 }
 
-.buttons-container button {
-  background-color: #ec1c25;
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 30px;
-  margin-right: 10px;
+@media (max-width: 400px) {
+  .carousel-inner.slider_top {
+    margin-top: 60px; /* Very small devices */
+  }
 }
 
-.buttons-container button:hover {
-  background-color: #fff;
-  color: #a9a9a9;
-  opacity: 0.9;
-}
-
-.slider_top {
-  margin-top: 150px;
-}
-.tab_none{
+.tab_none {
   display: none !important;
 }
 @media (min-width: 1020px) {
-  
-  .slider_top {
-    margin-top: 120px;
-  }
-  .tab_none{
+  .tab_none {
     display: none;
   }
 }
-@media (max-width: 768px){
-  .slider_top {
-    margin-top: 50px;
-  }
-  .tab_none{
+@media (max-width: 768px) {
+  .tab_none {
     display: none;
   }
-  .mobile_none{
+  .mobile_none {
     display: block;
   }
 }
 @media (max-width: 566px) {
-  .mobile_none{
+  .mobile_none {
     display: none;
   }
-  .tab_none{
+  .tab_none {
     display: block !important;
   }
-  .slider_top {
-    margin-top: 80px;
-    /* height: 50vh; */
-  }
-  .slide {
-    /* background-size: contain;
-    background-repeat: no-repeat; */
-    position: absolute;
-    top: 0;
-    left: 100%;
-    /* height: 63%; */
-    width: 100%;
-  }
-  /* .buttons-container {
-    position: absolute;
-    right: 0px;
-    top: 52%;
-  } */
-  .slide .info {
-    /* width: 300px; */
-    padding: 8px 10px;
-    top: 55px;
-    left: 20px;
-  }
- 
-  .buttons-container button {
-    padding: 5px 20px;
-  }
 }
-
-
 
 @media (max-width: 400px) {
   .slide .info {
     top: 100px;
     left: 10px;
   }
+}
 
-  .slider_top {
-    margin-top: 100px;
+@media (max-width: 991.98px) {
+  .banner-top {
+    padding-top: 10px;
   }
+  .home_three_slider .item {
+    min-height: 650px;
+  }
+ 
+}
+@media (max-width: 768px) {
+  .home_three_slider .item {
+    min-height: 400px;
+}
 }
