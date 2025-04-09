@@ -543,9 +543,10 @@ i {
 .circle_social_links .bg_youtube:hover {
   background-color: #ff0000;
 }
-.circle_social_links .bg_linkedin:hover {
-  background-color: #007bb5;
+.circle_social_links .bg_whatsapp:hover {
+  background-color: #25d366 ;
 }
+
 
 /* social links - end
 ================================================== */
@@ -963,7 +964,7 @@ i {
 }
 .section_title .small_title {
   line-height: 1;
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 25px;
   color: #ff4328;
   font-family: "Pacifico", cursive;
@@ -1197,7 +1198,9 @@ i {
 }
 
 .bg_default_pink {
-  background-color: #e6498f;
+  /* background-color: #e6498f; */
+  background-color: #ec1c25;
+
 }
 
 .bg_default_past {
@@ -2803,8 +2806,8 @@ button {
   content: "";
   z-index: -1;
   position: absolute;
-  /* background-color: #1a1e5d; */
-  background-color: #234392;
+  background-color: #856862;
+  /* background-color: #234392; */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 110px 100%);
 }
 .testimonial_section .deco_image {
@@ -6447,7 +6450,7 @@ blockquote .blockquote_admin i {
 @media screen and (max-width: 1100px) {
   /* global - start */
   .section_title .small_title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .section_title .big_title {
@@ -7653,7 +7656,7 @@ blockquote .blockquote_admin i {
   }
 
   .section_title .small_title {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
 
@@ -8565,12 +8568,7 @@ blockquote .blockquote_admin i {
     margin: auto;
   }
 }
-.text-white .circle_social_links:hover a.bg_whatsapp {
-  background-color: #25d366 !important;
-}
-.slider_image img {
-  /* border-radius: 0px 50px 0px 50px; */
-}
+
 /*------------------*/
 /* Slider Container */
 
@@ -8866,7 +8864,8 @@ blockquote .blockquote_admin i {
 }
 
 .item_type{
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 22px;
 }
 .item_sub_title{
   font-size: 16px;
@@ -8877,4 +8876,8 @@ blockquote .blockquote_admin i {
 .item_content_center{
   text-align: center;
   margin-top: 30px;
+}
+/*---------*/
+.fs-18{
+  font-size: 18px;
 }
